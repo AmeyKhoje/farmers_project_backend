@@ -13,10 +13,11 @@ let conn = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: '',
-    database: 'farmer_users'
+    database: 'elearnin_myshopee_pyramid'
 });
 
 conn.connect(function (err) {
     if(err) throw err;
     console.log("Connected to database");
+    app.listen('5000')
 })
